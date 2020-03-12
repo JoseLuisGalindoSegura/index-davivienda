@@ -1,0 +1,27 @@
+//Container Box - Shadows - Padding - Background
+.contentBox{
+    display: inline-block;
+    border-radius: 6px;
+
+    width: 90%;
+    margin: 20px auto 0;
+    position: relative;
+
+    padding: 15px;
+    background-color: $blanco-f8;
+    @include prefix((
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.15)
+    ), webkit moz ms);
+
+    transition-duration: .2s;
+    &--boxConfirm{
+        padding-top: 40px;
+    }
+    &--noBackg{
+        background-color: transparent;
+        box-shadow: inherit;
+    }
+    &--noPadding{
+        padding: 0;
+    }
+}
